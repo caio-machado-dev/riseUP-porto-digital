@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="images/logo/Icon.png" type="image/x-icon">
-    <title>Portal Ágape</title>
+    <title>Portal Ágape Sistemas</title>
 </head>
 <body>
     <div class="wrapper column">
         <section class="container section__head column">
             <div>
-                <img src="images/logo/Union.png" class="ag-logo" alt="agape">
+                <img src="images/logo/Union.png" alt="agape" class="ag-logo">
             </div>
-            <p class="d-none">Bem vindo(a) ao <br>Portal do Contribuinte!</p>
+            <div>
+                <p class="d-none">Bem vindo(a) ao <br>Portal do Contribuinte!</p>
+                <a href="index.html" class="d-none">Voltar</a>
+            </div>
         </section>
         <section class="container section__main">
             <div class="position">
                 <h2 class="forms-title">Acesse o nosso portal</h2>
                 <div class="forms-main">
                     <form>
-                        <label for="input-cpf">Certificado:</label>
-                        <input type="text" id="input-cpf" placeholder="Digite aqui o seu certificado">
+                        <label for="input-cpf">CPF/CNPJ:</label>
+                        <input type="text" id="input-cpf" placeholder="Digite aqui o seu CPF ou CNPJ">
+                    </form>
+                    <form>
+                        <label for="input-senha">Senha:</label>
+                        <input type="password" id="input-senha" placeholder="Digite aqui a sua senha">
                     </form>
                 </div>
                 <div class="forms-footer row">
@@ -29,10 +36,15 @@
                         <input type="checkbox" id="input-checkbox">
                         <label for="input-checkbox">Lembrar-me</label>
                     </form>
+                    <a href="ag-senha.html" class="anchor">Esqueceu sua senha?</a>
                 </div>
                 <div class="section-btn row">
                     <a href="ag-dam.html" class="btn">Entrar</a>
-                    <a href="ag-login.html" class="btn voltar">Voltar</a>
+                    <a href="ag-certificado.html" class="btn">Login por certificado</a>
+                    <!-- <div class="row certificado">
+                        <a href="pg-certificado.html" class="anchor">Clique aqui</a>
+                        <p>para entrar com o certificado.</p>
+                    </div> -->
                 </div>
                 <hr class="d-none">
                 <div class="section-footer">
