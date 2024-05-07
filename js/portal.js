@@ -1,4 +1,4 @@
-let gridApp = document.querySelector(".grid__section");
+let gridApp = document.querySelector('.grid__section');
 
 let gridList = [];
 
@@ -11,14 +11,17 @@ const addData = () => {
             newItem.classList.add('col')
             newItem.innerHTML = `
                 <img width="50" height="50" src="${item.img}"/>
-                <div class="app-info">
+                <div class="app-info" onclick="loginRef()">
                     <p class="app-name">${item.name}</p>
                     <p class="description">${item.description}</p>
-                </div>
-            `;
+                </div>`;
             gridApp.appendChild(newItem);
         })
     }
+}
+
+const loginRef = () =>{
+    window.location = 'ag-login.html';
 }
 
 const initApp = () => {
