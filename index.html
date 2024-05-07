@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="images/logo/Icon.png" type="image/x-icon">
+    <title>Portal Ágape</title>
+</head>
+<body>
+    <div class="wrapper column">
+        <section class="container section__head column">
+            <div>
+                <img src="images/logo/Union.png" alt="agape" class="ag-logo">
+            </div>
+            <p class="d-none">Bem vindo(a) ao <br>Portal do Contribuinte!</p>
+        </section>
+        <section class="container section__main">
+            <div class="position">
+                <h2 class="forms-title">Acesse o nosso portal</h2>
+                <div class="forms-main">
+                    <form>
+                        <label for="input-cpf">CPF/CNPJ:</label>
+                        <input type="text" id="cpf/cnpj" maxlength="18" placeholder="Digite aqui o seu CPF ou CNPJ">
+                    </form>
+                    <form>
+                        <label for="input-senha">Senha:</label>
+                        <input type="password" id="input-senha" placeholder="Digite aqui a sua senha">
+                    </form>
+                </div>
+                <div class="forms-footer row">
+                    <form>
+                        <input type="checkbox" id="input-checkbox">
+                        <label for="input-checkbox">Lembrar-me</label>
+                    </form>
+                    <a href="ag-senha.html" class="anchor">Esqueceu sua senha?</a>
+                </div>
+                <div class="section-btn row">
+                    <a href="ag-portal.html" class="btn">Entrar</a>
+                    <a href="ag-certificado.html" class="btn">Login por certificado</a>
+                    <!-- <div class="row certificado">
+                        <a href="pg-certificado.html" class="anchor">Clique aqui</a>
+                        <p>para entrar com o certificado.</p>
+                    </div> -->
+                </div>
+                <hr class="d-none">
+                <div class="section-footer">
+                    <div class="d-none">
+                        <img src="images/icp-logo.jpg" alt="icp-logo" class="footer-logo">
+                        <img src="images/lgpd-logo.png" alt="lgpd-logo" class="footer-logo">
+                    </div>
+                    <p>© Ágape Sistemas e Tecnologias</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+    <script src="js/mascara.js"></script>
+</body>
+</html>
