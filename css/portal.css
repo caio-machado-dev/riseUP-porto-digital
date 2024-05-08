@@ -27,8 +27,8 @@ p{margin-bottom: 0}
     justify-content: space-between;
 }
 
-.ag-logo,
-.footer-logo{width: 13%}
+.ag-logo{width: 15%}
+.footer-logo{width: 20%}
 
 .nav-link{
     color: #fff;
@@ -45,7 +45,6 @@ p{margin-bottom: 0}
 }
 
 .gov-logo--container{width: 50%}
-
 .gov-logo{width: 75%}
 
 .a11y-button{
@@ -61,8 +60,8 @@ p{margin-bottom: 0}
 
 .bi-search{
     position: absolute;
-    top: 50%;
-    right: 6%;
+    top: 55%;
+    right: 4%;
     transform: translateY(-50%);
     color: var(--clr-dark-gray);
 }
@@ -135,7 +134,11 @@ footer{
         margin: 0;
     }
 
-    #input-busca{padding: .5em 1em}
+    #input-busca{
+        padding: .5em 1em;
+        /* width: 50%;
+        float: right; */
+    }
 
     .grid__section{
         display: grid;
@@ -149,15 +152,12 @@ footer{
         transform: translateX(-50%);
     }
 
-    .footer-logo{max-width: 4vw}
+    .footer-logo{width: 4vw}
 }
 
 @media (min-width: 1200px){
-    .ag-logo{width: 5vw}
-
-    .footer-logo{width: 3.5vw}
-
+    .ag-logo{width: 4vw}
     .gov-logo--container{width: 50%}
-    
     .gov-logo{width: 30%}
+    .footer-logo{width: 3.5vw}
 }
