@@ -16,9 +16,9 @@
     --clr-dark-gray:#636363;
 }
 
-.section__head{background: linear-gradient(to bottom, #2765D9 0%, #022C90 100%);}
+.section__head{background-color: var(--clr-blue-primary)}
 
-.row{display: flex;}
+.row{display: flex}
 
 .forms-title{
     font-size: 1.5rem;
@@ -26,9 +26,9 @@
     text-align: center;
 }
 
-.forms-main{margin-top: 1.5em;}
+.forms-main{margin-top: 1.5em}
 
-.forms-main form{padding: .5em 0;}
+.forms-main form{padding: .5em 0}
 
 .forms-main form input{
     width: 100%;
@@ -43,7 +43,7 @@
     border: 2px solid var(--clr-blue-primary);
 }
 
-.forms-footer{justify-content: space-between;}
+.forms-footer{justify-content: space-between}
 
 .section-btn{
     flex-direction: column;
@@ -60,9 +60,7 @@
     text-align: center;
 }
 
-.btn:hover{
-    opacity: .7;
-}
+.btn:hover{opacity: .7}
 
 .certificado{
     justify-content: center;
@@ -75,7 +73,7 @@
     border: 1px solid var(--clr-blue-primary);
 }
 
-.anchor{color: var(--clr-blue-primary);}
+.anchor{color: var(--clr-blue-primary)}
 
 .section-footer p{
     color: var(--clr-dark-gray);
@@ -84,28 +82,21 @@
 }
 
 @media (max-width:576px) {
-    *{
-        font-size: 1.06066rem;
-    }
+    *{font-size: 1.06066rem}
 
-    .container{
-        background-color: #fff;
-        padding: 2em 1em;
-    }
+    .container{padding: 2em 1em}
 
-    .d-none{display: none;}
+    .d-none{display: none}
 
     .section__head,
-    .forms-main p{
-        text-align: center;
-    }
+    .forms-main p{text-align: center}
 
     .section__head{
         border-bottom-left-radius: 45%;
         border-bottom-right-radius: 45%;
     }
 
-    .ag-logo{width: 25%;}
+    .ag-logo{width: 20%}
 
     .section-footer p{
         position: fixed;
@@ -118,9 +109,7 @@
 }
 
 @media (min-width:992px){
-    .wrapper{
-        min-height: 100dvh;
-    }
+    .wrapper{min-height: 100dvh}
 
     .column{display: flex;}
 
@@ -129,6 +118,7 @@
         flex-direction: column;
         justify-content: space-between;
         padding: 1em;
+        background: linear-gradient(to bottom, var(--clr-blue-secondary) 0%, var(--clr-blue-primary) 100%);
     }
 
     .section__head p{
@@ -136,7 +126,7 @@
         font-size: 1.5rem;
     }
 
-    .ag-logo{width: 10%;}
+    .ag-logo{width: 10%}
 
     .section__main{
         position: relative;
@@ -158,17 +148,13 @@
         margin-top: .5em;
     }
 
-    .footer-logo{width: 5vw;}
+    .footer-logo{width: 5vw}
 }
 
 @media (min-width:1200px) {
-    *{
-        font-size: 1.25rem;
-    }
-    .section__head{
-        width: 65%;
-    }
-    .section__main{
-        width: 45%;
-    }
+    *{font-size: 1.25rem} 
+
+    .section__head{width: 65%}
+
+    .section__main{width: 45%}
 }
