@@ -20,6 +20,13 @@
 
 .row{display: flex}
 
+.gov-logo--container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.gov-logo{width: 75%}
+
 .forms-title{
     font-size: 1.5rem;
     font-weight: 400;
