@@ -90,7 +90,7 @@
     font-size: .8rem;
 }
 
-@media (max-width:576px) {
+@media (max-width:991px) {
     *{font-size: 1.06066rem}
 
     .container{padding: 1em}
