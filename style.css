@@ -22,7 +22,7 @@
 
 .gov-logo--container{
     width: 50%;
-    margin: 0 auto;
+    margin: 0 auto 1em;
     display: flex;
     justify-content: center;
 }
@@ -35,7 +35,7 @@
     text-align: center;
 }
 
-.forms-main{margin-top: 1.5em}
+.forms-main{margin-top: .5em}
 
 .forms-main form{padding: .5em 0}
 
