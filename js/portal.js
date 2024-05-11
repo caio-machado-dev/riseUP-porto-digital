@@ -1,5 +1,4 @@
 let gridApp = document.querySelector('.grid__section');
-
 let gridList = [];
 
 const addData = () => {
