@@ -27,9 +27,13 @@ p{margin-bottom: 0}
 .ag-logo{width: 15%}
 .footer-logo{width: 20%}
 
-.description, .footer-text, .user-text p+p{
+.user-text p span{
+    font-size: 1rem;
+}
+
+.description, .footer-text, .msg{
     color: var(--clr-dark-gray);
-    font-size: .9rem;
+    font-size: .8rem;
 }
 
 .gov-logo--container{width: 50%}
