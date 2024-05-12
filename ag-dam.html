@@ -42,18 +42,19 @@
                 <i class="bi bi-person-fill"></i>
             </div>
         </div>
-        <div class="column align-items-start">
+        <div class="column flex-wrap align-items-start gap-2">
             <h6 class="grid-title">2ª Via do Documento de Arrecadação Municipal</h6>
-            <div class="filter-btn d-flex gap-1">
+            <button class="filter-btn column align-items-center gap-1">
                 <i class="bi bi-funnel"></i>
-                Filtros
-            </div>
+                <p>Filtros</p>
+            </button>
+            <select type="text" id="input-tributos" class="flex-grow-1 p-2">
+                <option disabled="disabled" selected="selected">Selecione um tributo</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
         </div>
-        <select name="tributos" id="select-tributos" class="w-100 p-2 border rounded">
-            <option value="1">lorem ipsum dolor</option>
-            <option value="2">lorem ipsum dolor</option>
-            <option value="3">lorem ipsum dolor</option>
-        </select>
         <section></section>
     </main>
     <footer class="container column align-items-center pt-3">
