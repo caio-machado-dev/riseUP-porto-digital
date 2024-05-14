@@ -33,7 +33,6 @@
             <div class="gov-logo--container">
                 <img src="images/gov-logo.png" alt="gov logo" class="gov-logo">
             </div>
-
             <div class="column align-items-center gap-2">
                 <div class="user-text">
                     <p class="text-end">Olá, 
@@ -72,10 +71,69 @@
                 <option>3</option>
             </select>
         </div>
-        <section class="tributos__section mt-2 mb-1"></section>
+       
+        <section class="tributos__section mt-2 mb-1">
+            <div>
+                <h5>Tributo</h5>
+                <!-- COMO VAI SER A ESCOLHA DO TRIBUTO A SER PAGO? -->
+                <p>IPTU - IPTU GRAND</p> 
+                <p>ALUGUEL 2 - ALUGUEL</p>
+                <p>LIX - COLETA DE LIXO</p>
+            </div>
+            <div>
+                <h5>Emissão</h5>
+                <p>25/09/2023</p>
+                <p>15/09/2023</p>
+                <p>15/09/2023</p>
+            </div>
+            <div>
+                <h5>Vencimento</h5>
+                <p>25/09/2023</p>
+                <p>15/09/2023</p>
+                <p>15/09/2023</p>
+            </div>
+            <div>
+                <h5>Subtotal</h5>
+                <p>1.000,00</p>
+                <p>1.000,00</p>
+                <p>200,00</p>
+            </div>
+            <div>
+                <h5>Desconto</h5>
+                <p>0,00</p>
+                <p>0,00</p>
+                <p>0,00</p>
+            </div>
+            <div>
+                <h5>Juros</h5>
+                <p>0,00</p>
+                <p>0,00</p>
+                <p>0,00</p>
+            </div>
+            <div>
+                <h5>Multa</h5>
+                <p>0,00</p>
+                <p>0,00</p>
+                <p>0,00</p>
+            </div>
+            <div>
+                <h5>Situação</h5>
+                <p>Pendente</p>
+                <p>Pendente</p>
+                <p>Pendente</p>
+            </div>
+        </section>
+       
         <div class="column tributos-footer">
             <p>Total de <span class="border px-1">50</span> registros</p>
             <p>Página <span class="border px-1">1</span> de <span class="border px-1">5</span></p>
+        </div>
+         
+        <div class="d-flex justify-content-end pt-2">
+            <button class="pay-btn column align-items-center gap-2">
+                <i class="bi bi-cash"></i>
+                <p>Pagar</p>
+            </button>
         </div>
     </main>
     <aside class="sidebar p-3">
@@ -95,8 +153,8 @@
             <h5 class="list-title">Situação</h5>
             <ul class="aside-list">
                 <li><input type="checkbox" class="me-2">Pago</li>
-                <li><input type="checkbox" class="me-2">Aguardando pagamento</li>
-                <li><input type="checkbox" class="me-2">Atrasados</li>
+                <li><input type="checkbox" class="me-2">Pendente</li>
+                <li><input type="checkbox" class="me-2">Atrasado</li>
             </ul>
             <h5 class="list-title">Mostrar/Ocultar dados</h5>
             <ul class="aside-list">

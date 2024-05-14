@@ -1,5 +1,5 @@
 .tributos__section{
-    height: 320px;
+    height: 300px;
     border: 1px solid #DCDCDC;
     border-radius: 8px;
 }
@@ -60,14 +60,40 @@
     margin-top: .5em;
 }
 
+.tributos__section{
+    overflow-y: scroll;
+    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.tributos__section h5{
+    border-bottom: 1px solid #f2f2f2;
+    padding: .5em 0;
+}
+
+.tributos__section p + p{
+    margin-top: .5em;
+}
+
 footer{
     position: fixed;
     bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
 }
 
 @media (min-width: 992px) {
     .tributos__section{
-        height: 600px;
+        height: 550px;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .tributos__section div + div{
+        border-left: 1px solid #f2f2f2;
     }
 
     .tributos-footer p, span{
