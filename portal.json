@@ -3,13 +3,13 @@
         "id": 1,
         "img": "images/icons/dam-iss-b.png",        
         "name": "DAM-ISS",
-        "description": "Imposto serviços bancários"
+        "description": "Imposto sobre serviços bancários"
     },
     {
         "id": 2,
         "img": "images/icons/dam-iss-r.png",        
         "name": "DAM-ISS",
-        "description": "Imposto serviços retidos"
+        "description": "Imposto sobre serviços retidos"
     },
     {
         "id": 3,
