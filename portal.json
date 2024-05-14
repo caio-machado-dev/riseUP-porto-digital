@@ -15,37 +15,37 @@
         "id": 3,
         "img": "images/icons/2viadam.png",
         "name": "2ª Via DAM",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "Geração e Impressão 2ª Via DAM"
     },
     {
         "id": 4,
         "img": "images/icons/nfe.png",        
         "name": "NFE",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "Nota fiscal de serviço por contribuinte"
     },
     {
         "id": 5,
         "img": "images/icons/certidao.png",        
         "name": "Certidão",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "Autenticação de certidões de débitos"
     },
     {
         "id": 6,
         "img": "images/icons/alvara.png",
         "name": "Alvará",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "Verificação de autenticidade de Alvará"
     },
     {
         "id": 7,
         "img": "images/icons/agendamento.png",        
         "name": "Agendamento",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "P/ atendimento nos orgãos do município"
     },
     {
         "id": 8,
         "img": "images/icons/requerimento.png",        
         "name": "Requerimento",
-        "description": "Lorem ipsum dolor sit amet"
+        "description": "Requerimento para diferentes serviços"
     },
     {
         "id": 9,
