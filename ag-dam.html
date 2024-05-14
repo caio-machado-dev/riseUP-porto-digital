@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,6 +11,7 @@
     <title>2º Via DAM</title>
 </head>
 <body>
+    <div class="curtain"></div>
     <header class="py-3"> 
         <div class="container column align-items-center">
             <img src="images/logo/Union.png" alt="ag-logo" class="ag-logo">
@@ -55,19 +56,52 @@
                 <option>3</option>
             </select>
         </div>
-        <section class="tributos__section mt-3 mb-2"></section>
+        <section class="tributos__section mt-2 mb-1"></section>
         <div class="column tributos-footer">
             <p>Total de <span class="border px-1">50</span> registros</p>
             <p>Página <span class="border px-1">1</span> de <span class="border px-1">5</span></p>
         </div>
     </main>
-    <footer class="container column align-items-center pt-1">
+    <aside class="sidebar p-3">
+        <div class="d-flex justify-content-between align-items-center py-3">
+            <h3 class="aside-title m-0">Filtros</h3>
+            <button class="close-btn">
+                <i class="bi bi-x-lg"></i>
+            </button>
+        </div>
+        <div class="aside-content">
+            <h5 class="list-title">Data</h5>
+            <ul class="aside-list">
+               <li><input type="checkbox" class="me-2">3 dias</li>
+               <li><input type="checkbox" class="me-2">7 dias</li>
+               <li><input type="checkbox" class="me-2">15 dias</li>
+            </ul>
+            <h5 class="list-title">Situação</h5>
+            <ul class="aside-list">
+                <li><input type="checkbox" class="me-2">Pago</li>
+                <li><input type="checkbox" class="me-2">Aguardando pagamento</li>
+                <li><input type="checkbox" class="me-2">Atrasados</li>
+            </ul>
+            <h5 class="list-title">Mostrar/Ocultar dados</h5>
+            <ul class="aside-list">
+                <li><input type="checkbox" class="me-2">Emissão</li>
+                <li><input type="checkbox" class="me-2">Vencimento</li>
+                <li><input type="checkbox" class="me-2">Subtotal</li>
+                <li><input type="checkbox" class="me-2">Desconto</li>
+                <li><input type="checkbox" class="me-2">Juros</li>
+                <li><input type="checkbox" class="me-2">Multa</li>
+                <li><input type="checkbox" class="me-2">Situação</li>
+            </ul>
+        </div>
+    </aside>
+    <footer class="container column align-items-center pt-2">
         <div class="w-50">
             <img src="images/lgpd-logo.png" alt="lgpd-logo" class="footer-logo">
             <img src="images/icp-logo.jpg" alt="icp-logo" class="footer-logo">
         </div>
         <p class="footer-text">Ágape © Copyright 2024</p>
     </footer>
+    <script src="js/dam.js"></script>
     <script src="bootstrap-5.3.3-dist/js/bootstrap.js"></script>
 </body>
 </html>
