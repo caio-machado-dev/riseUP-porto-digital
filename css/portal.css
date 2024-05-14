@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     font-family: "Rubik", sans-serif;
-    font-size: 1.125rem;
+    font-size: 1rem;
 }
 
 :root{
@@ -27,10 +27,6 @@ p{margin-bottom: 0}
 .ag-logo{width: 15%}
 .footer-logo{width: 20%}
 
-.user-text p span{
-    font-size: 1rem;
-}
-
 .description, .footer-text, .msg{
     color: var(--clr-dark-gray);
     font-size: .8rem;
@@ -39,6 +35,7 @@ p{margin-bottom: 0}
 .gov-logo--container{width: 50%}
 .gov-logo{width: 75%}
 .user-text{line-height: 1rem}
+.user-name{font-size: 1.125rem}
 
 .bi-person-fill{
     color: #fff;
