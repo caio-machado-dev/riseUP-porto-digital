@@ -39,6 +39,11 @@ body{
     align-items: center;
 }
  
+.return-btn p:before{ 
+    content:"\2039";
+    margin-right: .5em;
+}
+
 .gov-logo--container{
     width: 50%;
     margin: 0 auto 1em;
@@ -122,7 +127,7 @@ body{
     .section__head a{
         position: fixed;
         top: 1%;
-        left: 2%;        
+        left: 1%;        
     }
 
     .return-img{
@@ -176,6 +181,10 @@ body{
     .section-footer{
         text-align: center;
         margin-top: 1em;
+    }
+
+    .return-img{
+        display: none;
     }
 }
 
