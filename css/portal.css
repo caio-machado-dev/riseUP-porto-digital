@@ -14,6 +14,7 @@
     --clr-yellow:#FEBB01;
     --clr-light-gray:#DCDCDC;
     --clr-dark-gray:#636363;
+    --clr-white: #fff;
 }
 
 header{background-color: #022C90}
@@ -37,11 +38,36 @@ p{margin-bottom: 0}
 .user-text{line-height: 1rem}
 .user-name{font-size: 1.125rem}
 
-.bi-person-fill{
-    color: #fff;
+.user-btn{
     background-color: var(--clr-blue-primary);
     padding: .25em .5em;
     border-radius: 50%;
+    border: none;
+}
+
+.user-popover{
+    --bs-popover-bg: var(--clr-blue-primary);
+    --bs-popover-body-color: var(var(--clr-white));
+}
+
+.popover-list{
+    color: var(--clr-white);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.popover-list li + li{
+    margin-top: .5em;
+}
+
+.popover-list--a{
+    text-decoration: none;
+    color: var(--clr-white);
+}
+
+.bi-person-fill{
+    color: var(--clr-white);
 }
 
 .bi-person-fill:hover{
@@ -50,7 +76,7 @@ p{margin-bottom: 0}
 }
 
 .a11y-button, .filter-btn{
-    color: #fff;
+    color: var(--clr-white);
     border: none;
     border-radius: 4px;
     padding: .3em .6em;
@@ -74,17 +100,13 @@ p{margin-bottom: 0}
 
 .search-box{margin: 1em 0}
 
-input::placeholder{color: var(--clr-dark-gray)}
-
 #input-tributos{
     border: 2px solid var(--clr-light-gray);
     border-radius: 8px;
     padding: .75em 1em;
 }
 
-#input-tributos option{
-    color: #636363;
-}
+#input-tributos option{color: var(--clr-dark-gray);}
 
 #input-busca{
     border: 2px solid var(--clr-light-gray);
