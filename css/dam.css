@@ -1,5 +1,5 @@
 .tributos__section{
-    height: 300px;
+    height: 320px;
     border: 1px solid #DCDCDC;
     border-radius: 8px;
 }
@@ -58,6 +58,11 @@
 
 .aside-list li{
     margin-top: .5em;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
 }
 
 @media (min-width: 992px) {
