@@ -7,7 +7,8 @@ const addData = () => {
         gridList.forEach(item =>{
             let newItem = document.createElement('div');
             newItem.classList.add('grid-item');
-            newItem.classList.add('col')
+            newItem.classList.add('col');
+            // adicionar onclick="loginRef()" na própria div
             newItem.innerHTML = `
                 <img width="50" height="50" src="${item.img}"/>
                 <div class="app-info" onclick="loginRef()">
