@@ -94,7 +94,7 @@ footer{
     }
 }
 
-@media (min-width: 1200px) or (min-height: 888px){
+@media (min-width: 1200px) and (min-height: 888px){
     .tributos__section{
         height: 600px;
     }
