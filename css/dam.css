@@ -68,35 +68,34 @@
     text-align: center;
 }
 
-.tributos__section h5{
-    border-bottom: 1px solid #f2f2f2;
-    padding: .5em 0;
+.tributos-title{
+    padding: .5em;
+    border-bottom: 2px solid white;
 }
 
-.tributos__section p + p{
-    margin-top: .5em;
+.tributos__section p{
+    margin-bottom: .5em;
 }
 
 footer{
     position: fixed;
     bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (min-height: 600px){
     .tributos__section{
-        height: 550px;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         overflow-y: hidden;
         overflow-x: hidden;
     }
 
-    .tributos__section div + div{
-        border-left: 1px solid #f2f2f2;
-    }
-
     .tributos-footer p, span{
         font-size: 1rem;
+    }
+}
+
+@media (min-width: 1200px) or (min-height: 888px){
+    .tributos__section{
+        height: 700px;
     }
 }
