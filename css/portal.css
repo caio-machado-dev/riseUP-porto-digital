@@ -14,10 +14,11 @@
     --clr-yellow:#FEBB01;
     --clr-light-gray:#DCDCDC;
     --clr-dark-gray:#636363;
-    --clr-white: #fff;
+    --clr-white: #fafafa;
 }
 
 header{background-color: #022C90}
+
 p{margin-bottom: 0}
 
 .column{
@@ -47,7 +48,7 @@ p{margin-bottom: 0}
 
 .user-popover{
     --bs-popover-bg: var(--clr-blue-primary);
-    --bs-popover-body-color: var(var(--clr-white));
+    --bs-popover-body-color: var(--clr-white);
 }
 
 .popover-list{
@@ -57,22 +58,16 @@ p{margin-bottom: 0}
     margin: 0;
 }
 
-.popover-list li:hover{
-    opacity: .8;
-}
+.popover-list li:hover{opacity: .8}
 
-.popover-list li + li{
-    margin-top: .5em;
-}
+.popover-list li + li{margin-top: .5em}
 
 .popover-list--a{
     text-decoration: none;
     color: var(--clr-white);
 }
 
-.bi-person-fill{
-    color: var(--clr-white);
-}
+.bi-person-fill{color: #fff}
 
 .bi-person-fill:hover{
     opacity: .8;
@@ -80,7 +75,7 @@ p{margin-bottom: 0}
 }
 
 .a11y-button, .filter-btn, .pay-btn{
-    color: var(--clr-white);
+    color: #fff;
     border: none;
     border-radius: 4px;
     padding: .3em .6em;
@@ -88,9 +83,7 @@ p{margin-bottom: 0}
     box-shadow: 0 2px 2px rgba(0, 0, 0, .5);
 }
 
-.filter-btn, .pay-btn{
-    background-color: var(--clr-blue-primary);
-}
+.filter-btn, .pay-btn{background-color: var(--clr-blue-primary)}
 
 .a11y-button:hover, .filter-btn:hover, .pay-btn:hover{opacity: .8}
 
@@ -165,22 +158,14 @@ footer{
 @media (min-width: 992px) {
     .ag-logo{width: 6vw}
 
-    .gov-logo--container{width: 50%}
-
     .gov-logo{width: 40%}
 
+    .gov-logo--container{width: 50%}
+
+    #input-busca{padding: .5em 1em}
     .search-box, .grid-title{
         width: 50%;
         margin: 0;
-    }
-
-    #input-busca{
-        padding: .5em 1em;
-    }
-
-    .grid__section{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 
     footer{
@@ -193,9 +178,10 @@ footer{
     .footer-logo{width: 4vw}
 }
 
-@media (min-width: 1200px){
+@media (min-width: 1200px) and (min-height: 600px){
     .ag-logo{width: 4vw}
     .gov-logo--container{width: 50%}
     .gov-logo{width: 20%}
     .footer-logo{width: 3.5vw}
+    .grid__section{grid-template-columns: 1fr 1fr 1fr}
 }
