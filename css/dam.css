@@ -87,7 +87,7 @@ footer{
         grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
         overflow-y: hidden;
         overflow-x: hidden;
-        height:350px;
+        height:320px;
     }
 
     .tributos-footer p, span{
