@@ -21,31 +21,31 @@
         "id": 4,
         "img": "images/icons/nfe.png",        
         "name": "NFE",
-        "description": "Nota fiscal de serviço por contribuinte"
+        "description": "Nota fiscal de serviço"
     },
     {
         "id": 5,
         "img": "images/icons/certidao.png",        
         "name": "Certidão",
-        "description": "Autenticação de certidões de débitos"
+        "description": "Autenticação de certidões"
     },
     {
         "id": 6,
         "img": "images/icons/alvara.png",
         "name": "Alvará",
-        "description": "Verificação de autenticidade de Alvará"
+        "description": "Verificação de autenticidade"
     },
     {
         "id": 7,
         "img": "images/icons/agendamento.png",        
         "name": "Agendamento",
-        "description": "P/ atendimento nos orgãos do município"
+        "description": "P/ atendimento nos orgãos"
     },
     {
         "id": 8,
         "img": "images/icons/requerimento.png",        
         "name": "Requerimento",
-        "description": "Requerimento para diferentes serviços"
+        "description": "P/ diferentes serviços"
     },
     {
         "id": 9,
