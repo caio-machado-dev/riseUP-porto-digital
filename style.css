@@ -144,7 +144,6 @@ input::placeholder{font-size: 1rem}
 .anchor{color: var(--clr-blue-primary)}
 
 .section-footer p{
-    background-color: var(--bg-light);
     color: var(--clr-dark-gray);
     text-align: center;
 }
