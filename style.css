@@ -143,6 +143,8 @@ input::placeholder{font-size: 1rem}
 
 .anchor{color: var(--clr-blue-primary)}
 
+.section-footer{background-color: var(--bg-light)}
+
 .section-footer p{
     color: var(--clr-dark-gray);
     text-align: center;
