@@ -180,7 +180,6 @@ input::placeholder{font-size: 1rem}
         left: 50%;
         transform: translateX(-50%);
         width: 100%;
-        background-color: #fff;
     }
 }
 
