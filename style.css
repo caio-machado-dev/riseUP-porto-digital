@@ -13,26 +13,36 @@
     --clr-yellow:#FEBB01;
     --clr-light-gray:#DCDCDC;
     --clr-dark-gray:#636363;
-    --clr-white: #fff;
+    --clr-text: #212529;
+    --bg-light: #fafafa;
+}
+
+.dark-mode:root{
+    --clr-blue-primary: #FEBB01;
+    --clr-light-gray: #636363;
+    --clr-dark-gray: #FEBB01;
+    --bg-light: #212529;
+    --clr-text: #febb01;
 }
 
 body{
+    background-color: var(--bg-light);
     font-size: 1rem;
 }
 
 .row{display: flex}
 
-.section__head{background-color: var(--clr-blue-primary)}
+.section__head{background-color: #022C90}
 
-.zzz{
+.section__head a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.welcome-box{
     display: flex;
     flex-direction: column;
     gap: 1em;
-}
-
-.section__head a{
-    color: var(--clr-white);
-    text-decoration: none;
 }
 
 .return-btn{
@@ -50,30 +60,36 @@ body{
     margin: 0 auto 1em;
     display: flex;
     justify-content: center;
+    background-color: #fff;
 }
 
 .gov-logo{width: 75%}
 
 .forms-title{
+    color: var(--clr-text);
     font-weight: 400;
     text-align: center;
 }
 
-.forms-main{margin-top: .75em}
+label,
+.forms-main p{color: var(--clr-text);}
 
-.forms-main form{padding: .75em 0}
+.forms-main{margin-top: 1em}
+
+.forms-main form{padding: .5em 0}
 
 .forms-main form input{
     width: 100%;
-    padding: 1.125em;
+    padding: 1.25em;
     border-radius: 16px;
-    border: 2px solid var(--clr-light-gray);
+    background-color: var(--bg-light);
+    border: 2px solid var(--clr-dark-gray);
 }
 
 .forms-main form input:focus,
 .forms-main form input:active{
     outline: none;
-    border: 2px solid var(--clr-blue-primary);
+    border: 2px solid #022C90;
 }
 
 .forms-footer{justify-content: space-between}
@@ -82,13 +98,13 @@ input::placeholder{font-size: 1rem}
 
 .section-btn{
     flex-direction: column;
-    padding: 1.25em 0;
+    padding: 1.5em 0;
     gap: .5em;
 }
 
 .btn{
-    color: var(--clr-white);
-    background-color: var(--clr-blue-primary);
+    color: #fff;
+    background-color: #022C90;
     text-decoration: none;
     border-radius: 16px;
     padding: .75em 0;
@@ -97,15 +113,32 @@ input::placeholder{font-size: 1rem}
 
 .btn:hover, .return-btn:hover{opacity: .7}
 
+.btn-group{
+    position: fixed;
+    top: 1%;
+    right: 1%;
+}
+
+.a11y-button{
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: .5em .75em;
+    background-color: var(--clr-yellow);
+    box-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+}
+
+.a11y-button:hover{cursor: pointer;}
+
 .certificado{
     justify-content: center;
     gap: .25em;
 }
 
 .voltar{
-    background-color: var(--clr-light-gray);
-    color: var(--clr-blue-primary);
-    border: 1px solid var(--clr-blue-primary);
+    background-color: #fff;
+    color: #022C90;
+    border: 1px solid #022C90;
 }
 
 .anchor{color: var(--clr-blue-primary)}
@@ -113,10 +146,9 @@ input::placeholder{font-size: 1rem}
 .section-footer p{
     color: var(--clr-dark-gray);
     text-align: center;
-    font-size: .8rem;
 }
 
-@media (max-width:991px) {
+@media (max-width: 991px) {
     .container{padding: 1em}
     .d-none{display: none}
     .ag-logo{width: 20%}
@@ -125,6 +157,7 @@ input::placeholder{font-size: 1rem}
     .section__head{
         border-bottom-left-radius: 45%;
         border-bottom-right-radius: 45%;
+        padding: 1.5em 0;
     }
 
     .section__head a{
@@ -138,6 +171,8 @@ input::placeholder{font-size: 1rem}
     }
 
     .section-footer p{
+        font-size: .8rem;
+
         position: fixed;
         bottom: 0;
         left: 50%;
@@ -168,11 +203,11 @@ input::placeholder{font-size: 1rem}
         flex-direction: column;
         justify-content: space-between;
         padding: 1em;
-        background: linear-gradient(to bottom, var(--clr-blue-secondary) 0%, var(--clr-blue-primary) 100%);
+        background: linear-gradient(to bottom, #2765D9 0%, #022C90 100%);
     }
 
     .section__head p{
-        color: var(--clr-white);;
+        color: #fff;
         font-size: 1.5rem;
     }
 
