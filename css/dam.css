@@ -62,14 +62,14 @@
 }
 
 .tributos-title{
-    color: var(--clr-text);
+    color: var(--text-dark);
     padding: .5em;
     border-bottom: 2px solid white;
 }
 
 .tributos__section p{
     margin-bottom: .5em;
-    color: var(--clr-text);
+    color: var(--text-dark);
 }
 
 footer{
@@ -79,7 +79,7 @@ footer{
 
 .tributos-footer p, span{
     font-size: .8rem;
-    color: var(--clr-text);
+    color: var(--text-dark);
 }
 
 @media (min-width: 992px) and (min-height: 600px){
