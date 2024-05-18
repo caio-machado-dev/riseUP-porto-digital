@@ -16,13 +16,15 @@
     --text-gray:#636363;
     --clr-yellow:#FEBB01;
     --clr-blue-primary:#022C90;
+    --btn-blue: #022C90;
 }
 
 .dark-mode:root{
-    --border: #555;
-    --text-dark: #febb01;
+    --border: #ababab;
+    --btn-blue: #febb01;
+    --text-dark: #ababab;
     --text-blue: #febb01;
-    --text-gray: #febb01;
+    --text-gray: #ababab;
     --bg-light: #121212;
     --clr-blue-primary: #000;
 }
@@ -41,12 +43,13 @@ p{margin-bottom: 0}
 .description, .footer-text, .msg{color: var(--text-gray)}
 
 .ag-logo{width: 15%}
+.footer-logo{width: 20%}
 
 .gov-logo--container{width: 50%}
-
-.gov-logo{width: 75%}
-
-.footer-logo{width: 20%}
+.gov-logo{
+    width: 75%;
+    background-color: #fafafa;
+}
 
 .user-text{
     color: var(--text-dark);
@@ -56,14 +59,14 @@ p{margin-bottom: 0}
 .user-name{font-size: 1rem;}
 
 .user-btn{
-    background-color: var(--clr-blue-primary);
+    background-color: var(--btn-blue);
     padding: .25em .5em;
     border-radius: 50%;
     border: none;
 }
 
 .user-popover{
-    --bs-popover-bg: var(--clr-blue-primary);
+    --bs-popover-bg: var(--btn-blue);
     --bs-popover-body-color: #fff;
 }
 
@@ -99,7 +102,7 @@ p{margin-bottom: 0}
     box-shadow: 0 2px 2px rgba(0, 0, 0, .5);
 }
 
-.filter-btn, .pay-btn{background-color: var(--clr-blue-primary)}
+.filter-btn, .pay-btn{background-color: var(--btn-blue)}
 
 .a11y-button:hover, .filter-btn:hover, .pay-btn:hover{opacity: .8}
 
@@ -115,16 +118,16 @@ p{margin-bottom: 0}
 
 #input-tributos{
     background-color: var(--bg-light);
-    border: 2px solid var(-border-gray);
+    border: 1px solid var(-border-gray);
     border-radius: 16px;
     padding: .75em 1em;
 }
 
-#input-tributos option{color: #636363;}
+#input-tributos option{color: var(--text-dark)}
 
 #input-busca{
     background-color: var(--bg-light);
-    border: 2px solid var(--border);
+    border: 1px solid var(--border);
     border-radius: 16px;
     padding: .75em 1em;
     width: 100%
@@ -134,7 +137,7 @@ input::placeholder, input:focus{color: var(--text-gray)}
 
 #input-busca:focus, #input-busca:hover, #input-tributos:focus, #input-tributos:hover{
     outline: none;
-    border: 2px solid var(--clr-blue-primary);
+    border: 1px solid var(--clr-blue-primary);
 }
 
 .search-box{position: relative}
@@ -148,6 +151,11 @@ input::placeholder, input:focus{color: var(--text-gray)}
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: .5em;
+}
+
+.app-name{
+    font-weight: 500;
+    margin: 0;
 }
 
 .grid-item{
@@ -170,7 +178,7 @@ footer{
     width: 100%;
 }
 
-.footer-text{font-size: .9rem}
+.footer-text, .msg{font-size: .9rem}
 
 .a11y-modal{
     position: fixed;
@@ -178,7 +186,7 @@ footer{
     top: 50%;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 992px) and (min-height: 700px) {
     .ag-logo{width: 6vw}
 
     .gov-logo{width: 40%}
@@ -186,6 +194,8 @@ footer{
     .gov-logo--container{width: 50%}
 
     #input-busca{padding: .5em 1em}
+
+    .grid__section{grid-template-columns: repeat(3, 1fr)}
 
     .search-box, .grid-title{
         width: 50%;
@@ -202,10 +212,14 @@ footer{
     .footer-logo{width: 4vw}
 }
 
-@media (min-width: 1200px) and (min-height: 600px){
+@media (min-width: 1200px) and (min-height: 800px){
     .ag-logo{width: 4vw}
     .gov-logo--container{width: 50%}
     .gov-logo{width: 20%}
     .footer-logo{width: 3.5vw}
-    .grid__section{grid-template-columns: 1fr 1fr 1fr}
+    .grid__section{grid-template-columns: repeat(3, 1fr)}
+}
+
+@media (min-height: 1200px) {
+    .grid__section{grid-template-columns: repeat(2, 1fr)}    
 }
