@@ -13,7 +13,7 @@ const addData = () => {
             // adicionar onclick="loginRef()" na própria div
             newItem.innerHTML = `
                 <img width="50" height="50" src="${item.img}"/>
-                <div class="app-info" onclick="loginRef()">
+                <div class="app-info">
                     <h5 class="app-name">${item.name}</h5>
                     <p class="description">${item.description}</p>
                 </div>`;
