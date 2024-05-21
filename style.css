@@ -9,7 +9,7 @@
 
 :root{
     --border:#D9D9D9;
-    --bg-light: #fafafa;
+    --bg-light: #fff;
     --text-blue: #022C90;
     --text-dark: #212529;
     --text-gray:#636363;
@@ -23,9 +23,9 @@
     --border: #ababab;
     --btn-blue: #febb01;
     --btn-text: #000;
-    --text-dark: #ababab;
+    --text-dark: #febb01;
     --text-blue: #febb01;
-    --text-gray: #ababab;
+    --text-gray: #febb01;
     --bg-light: #121212;
     --clr-blue-primary: #000;
 }
@@ -65,7 +65,7 @@ body{
     margin: 0 auto 1em;
     display: flex;
     justify-content: center;
-    background-color: #fafafa;
+    background-color: #fff;
 }
 
 .gov-logo{width: 75%}
@@ -104,7 +104,7 @@ input::placeholder{font-size: 1rem}
 
 .section-btn{
     flex-direction: column;
-    padding: 1.5em 0;
+    padding: 2.5em 0 0;
     gap: .5em;
 }
 
@@ -143,12 +143,11 @@ input::placeholder{font-size: 1rem}
 
 .voltar{
     background-color: var(--bg-light);
-    color: var(--text-dark);
-    border: 1px solid var(--text-dark);
+    color: var(--text-blue);
+    border: 1px solid var(--text-blue);
 }
 
 .anchor{color: var(--text-blue)}
-
 
 .section-footer p{
     background-color: var(--bg-light);
@@ -159,13 +158,13 @@ input::placeholder{font-size: 1rem}
 @media (max-width: 991px) {
     .container{padding: 1em}
     .d-none{display: none}
-    .ag-logo{width: 20%}
+    .ag-logo{width: 50px}
     .section__head, .forms-main p{text-align: center}
 
     .section__head{
         border-bottom-left-radius: 45%;
         border-bottom-right-radius: 45%;
-        padding: 1.5em 0;
+        padding: 2em 0;
     }
 
     .section__head a{
@@ -189,11 +188,10 @@ input::placeholder{font-size: 1rem}
     }
 }
 
-@media (min-width:992px){
+@media (min-width:992px) {
     .wrapper{min-height: 100dvh}
     .column{display: flex;}
-    .ag-logo{width: 10%}
-    .footer-logo{width: 6vw}
+    .ag-logo, .footer-logo{width: 40px}
 
     .position{
         position: absolute;
@@ -206,7 +204,7 @@ input::placeholder{font-size: 1rem}
     }
 
     .section__head{
-        width: 50%;
+        flex-basis: 65%;
         flex-direction: column;
         justify-content: space-between;
         padding: 1em;
@@ -219,8 +217,8 @@ input::placeholder{font-size: 1rem}
     }
 
     .section__main{
+        flex-basis: 35%;
         position: relative;
-        width: 50%;
     }
 
     .section-footer{
