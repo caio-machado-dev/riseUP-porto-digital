@@ -14,8 +14,7 @@
 .curtain{
     position: absolute;
     transform: translateX(-100%);
-
-    background-color: rgba(0, 0, 0, .45);
+    background-color: rgba(0, 0, 0, .5);
     width: 100%;
     height: 100%;
     z-index: 1;
@@ -25,7 +24,7 @@
     transform: translateX(0);
 }
 
-.bi-x-lg{color: #fff}
+.bi-x-lg{color:#fff}
 
 .close-btn{
     background-color: transparent;
@@ -45,23 +44,24 @@
 .tributos__section{
     overflow-y: scroll;
     overflow-x: hidden;
-    display: grid;
-    grid-template-columns: 1fr;
     text-align: center;
     height: 300px;
     border: 1px solid #DCDCDC;
     border-radius: 8px;
+    color: var(--text-dark);
+    font-weight: 400;
 }
 
-.tributos-title{
-    color: var(--text-dark);
-    padding: .5em;
-    border-bottom: 1px solid white;
+.tributos-title{border-bottom: 1px solid #d9d9d9}
+
+.tributos-title h5, .tributos{
+    padding: .5em 0;
+    margin: 0;
 }
 
-.tributos__section p{
-    margin-bottom: .5em;
-    color: var(--text-dark);
+.selected{
+    background-color: var(--clr-blue-secondary);
+    color: #fff;
 }
 
 footer{
@@ -74,12 +74,28 @@ footer{
     color: var(--text-dark);
 }
 
+@media (max-width:576px) {
+    .pay-btn{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    footer.column{justify-content: center}
+    
+    footer div{display: none}
+}
+
 @media (min-width: 992px) and (min-height: 600px) {
     .tributos__section{
-        grid-template-columns: repeat(8, 1fr);
-        overflow-y: hidden;
         overflow-x: hidden;
-        height: 350px;
+        height: 320px;
+    }
+
+    .tributos-title, .tributos{
+        display: grid;
+        grid-template-columns: 2fr repeat(7, 1fr);
     }
 
     .tributos-footer p, span{
@@ -87,16 +103,8 @@ footer{
     }
 }
 
-@media (min-height: 768px){
-    .tributos__section{
-        height: 450px;
-    }
-
-    
-}
-
 @media (min-width: 1200px) and (min-height: 935px){
     .tributos__section{
-        height: 600px;
+        height: 650px;
     }
 }

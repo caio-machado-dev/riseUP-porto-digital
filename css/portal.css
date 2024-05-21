@@ -10,23 +10,24 @@
 
 :root{
     --border:#D9D9D9;
-    --bg-light: #fafafa;
+    --bg-light: #fff;
     --text-blue: #022C90;
     --text-dark: #212529;
     --text-gray:#636363;
     --clr-yellow:#FEBB01;
     --clr-blue-primary:#022C90;
+    --clr-blue-secondary: #2765d9;
     --btn-blue: #022C90;
 }
 
 .dark-mode:root{
     --border: #ababab;
     --btn-blue: #febb01;
-    --text-dark: #ababab;
+    --text-dark: #febb01;
     --text-blue: #febb01;
-    --text-gray: #ababab;
+    --text-gray: #febb01;
     --bg-light: #121212;
-    --clr-blue-primary: #000;
+    /* --clr-blue-primary: #555; */
 }
 
 body{background-color: var(--bg-light)}
@@ -42,13 +43,12 @@ p{margin-bottom: 0}
 
 .description, .footer-text, .msg{color: var(--text-gray)}
 
-.ag-logo{width: 15%}
-.footer-logo{width: 20%}
+.ag-logo, .footer-logo{width: 40px}
 
 .gov-logo--container{width: 50%}
 .gov-logo{
     width: 75%;
-    background-color: #fafafa;
+    background-color: #fff;
 }
 
 .user-text{
@@ -117,8 +117,9 @@ p{margin-bottom: 0}
 .search-box{margin: 1em 0}
 
 #input-tributos{
+    color: var(--text-dark);
     background-color: var(--bg-light);
-    border: 1px solid var(-border-gray);
+    border: 1px solid var(--border);
     border-radius: 16px;
     padding: .75em 1em;
 }
@@ -174,7 +175,6 @@ input::placeholder, input:focus{color: var(--text-gray)}
 }
 
 footer{
-    background-color: var(--bg-light);
     width: 100%;
 }
 
@@ -186,13 +186,10 @@ footer{
     top: 50%;
 }
 
-@media (min-width: 992px) and (min-height: 700px) {
-    .ag-logo{width: 6vw}
-
-    .gov-logo{width: 40%}
-
-    .gov-logo--container{width: 50%}
-
+@media (min-width: 768px) and (min-height: 600px){
+    .gov-logo{width: 120px}
+    .gov-logo--container{width: 35%}
+    
     #input-busca{padding: .5em 1em}
 
     .grid__section{grid-template-columns: repeat(3, 1fr)}
@@ -208,16 +205,12 @@ footer{
         left: 50%;
         transform: translateX(-50%);
     }
-
-    .footer-logo{width: 4vw}
 }
 
 @media (min-width: 1200px) and (min-height: 800px){
-    .ag-logo{width: 4vw}
     .gov-logo--container{width: 50%}
-    .gov-logo{width: 20%}
-    .footer-logo{width: 3.5vw}
-    .grid__section{grid-template-columns: repeat(3, 1fr)}
+    .gov-logo{width: 150px}
+    .grid__section{grid-template-columns: repeat(4, 1fr)}
 }
 
 @media (min-height: 1200px) {
