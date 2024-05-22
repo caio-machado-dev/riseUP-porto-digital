@@ -49,34 +49,40 @@
     border: 1px solid #DCDCDC;
     border-radius: 8px;
     color: var(--text-dark);
-    font-weight: 400;
+    text-align: start;
 }
 
-.tributos-title{border-bottom: 1px solid #d9d9d9}
+.tributos{display: flex}
 
-.tributos-title h5, .tributos{
-    padding: .5em 0;
-    margin: 0;
+.tributos-title, .tributos-content{
+    display: flex;
+    flex-direction: column;
 }
 
-.selected{
-    background-color: var(--clr-blue-secondary);
-    color: #fff;
+.tributos-title{
+    background-color: var(--bg-tributo);
+    border-right: 1px solid #DCDCDC;
+    flex-basis: 40%;
+    font-weight: 500;
 }
+
+.tributos-title span, .tributos-content span{
+    border-bottom: 1px solid #DCDCDC;
+    padding: .5em;
+}
+
+.tributos-content{flex-basis: 60%}
 
 footer{
     position: fixed;
     bottom: 0;
 }
 
-.tributos-footer p, span{
-    font-size: .8rem;
-    color: var(--text-dark);
-}
+.tributos-footer{color: var(--text-dark)}
 
 @media (max-width:576px) {
     .pay-btn{
-        width: 80%;
+        width: 100%;
         margin: 0 auto;
         display: flex;
         justify-content: center;
@@ -89,22 +95,26 @@ footer{
 
 @media (min-width: 992px) and (min-height: 600px) {
     .tributos__section{
+        overflow-y: auto;
         overflow-x: hidden;
         height: 320px;
     }
 
-    .tributos-title, .tributos{
+    .tributos{flex-direction: column}
+
+    .tributos-title, .tributos-content{
         display: grid;
-        grid-template-columns: 2fr repeat(7, 1fr);
+        grid-template-columns: 1.5fr repeat(7, 1fr);   
+        text-align: center;    
+        border-right: none; 
     }
 
-    .tributos-footer p, span{
-        font-size: 1rem;
-    }
+    .selected{
+        background-color: var(--clr-blue-secondary);
+        color: #fff;
+    }  
 }
 
 @media (min-width: 1200px) and (min-height: 935px){
-    .tributos__section{
-        height: 650px;
-    }
+    .tributos__section{height: 650px} 
 }

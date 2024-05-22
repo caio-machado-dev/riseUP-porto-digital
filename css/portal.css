@@ -11,6 +11,7 @@
 :root{
     --border:#D9D9D9;
     --bg-light: #fff;
+    --bg-tributo: #fafafa;
     --text-blue: #022C90;
     --text-dark: #212529;
     --text-gray:#636363;
@@ -27,7 +28,7 @@
     --text-blue: #febb01;
     --text-gray: #febb01;
     --bg-light: #121212;
-    /* --clr-blue-primary: #555; */
+    --bg-tributo: #555;
 }
 
 body{background-color: var(--bg-light)}
