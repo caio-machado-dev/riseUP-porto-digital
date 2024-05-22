@@ -104,7 +104,7 @@ input::placeholder{font-size: 1rem}
 
 .section-btn{
     flex-direction: column;
-    padding: 2.5em 0 0;
+    padding: 1.5em 0 0;
     gap: .5em;
 }
 
@@ -155,7 +155,7 @@ input::placeholder{font-size: 1rem}
     text-align: center;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 800px) {
     .container{padding: 1em}
     .d-none{display: none}
     .ag-logo{width: 50px}
@@ -188,7 +188,7 @@ input::placeholder{font-size: 1rem}
     }
 }
 
-@media (min-width:992px) {
+@media (min-width:801px) {
     .wrapper{min-height: 100dvh}
     .column{display: flex;}
     .ag-logo, .footer-logo{width: 40px}
@@ -204,7 +204,7 @@ input::placeholder{font-size: 1rem}
     }
 
     .section__head{
-        flex-basis: 65%;
+        flex-basis: 60%;
         flex-direction: column;
         justify-content: space-between;
         padding: 1em;
@@ -217,7 +217,7 @@ input::placeholder{font-size: 1rem}
     }
 
     .section__main{
-        flex-basis: 35%;
+        flex-basis: 40%;
         position: relative;
     }
 
@@ -231,8 +231,8 @@ input::placeholder{font-size: 1rem}
     }
 }
 
-@media (min-width:1400px) {
-    body{font-size: 1.25rem} 
+@media (min-width: 1200px) {
     .section__head{width: 65%}
-    .section__main{width: 45%}
+    .section__main{width: 35%}
+    .ag-logo, .footer-logo{width: 80px}
 }
