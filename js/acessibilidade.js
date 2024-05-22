@@ -1,26 +1,34 @@
-// function changeFonteSize(e) {
-//   var elemento = $("h6, p");
-// 	var fonte = parseInt(elemento.css('font-size'));
-// 	var body = $("body");
-// 	const fonteNormal = parseInt(body.css('font-size'));
+var $btnAumentar = $("#btnAumentar");
+var $btnReset = $("#btnReset");
+var $btnDiminuir = $("#btnDiminuir");
+var $elemento = $("body").find("*");
+var fonts = [];
+var reset = [];
 
+(function obterTamanhoFonte() {
+  for (var i = 0; i < $elemento.length; i++) {
+    fonts.push(parseFloat($elemento.eq(i).css('font-size')));
+    reset.push(parseFloat($elemento.eq(i).css('font-size')));
+  }
+})()
 
-// 	if (e == 'aumentar') {
-// 		fonte++;
-// 	}
-// 	if (e == 'diminuir'){
-// 		fonte--;
-// 	}
-// 	if (e == 'normal'){
-// 		fonte = fonteNormal;
-// 	}
+$btnAumentar.on('click', function() {
+  for (var i = 0; i < $elemento.length; i++) {
+    ++fonts[i];
+    $elemento.eq(i).css('font-size', fonts[i]);
+  }
+});
 
-// 	elemento.css("fontSize", fonte);
-// }
+$btnDiminuir.on('click', function() {
+  for (var i = 0; i < $elemento.length; i++) {
+    --fonts[i];
+    $elemento.eq(i).css('font-size', fonts[i]);
+  }
+});
 
-// // function contraste(){
-// //   $("body")
-// //       .css("background-color", "black")
-// //       .css("color", "white");
-// // }
-
+$btnReset.on('click', function() {
+  for (var i = 0; i < $elemento.length; i++) {
+    $elemento.eq(i).css('font-size', reset[i]);
+    fonts[i] = reset[i];
+  }
+});
