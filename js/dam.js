@@ -24,8 +24,7 @@ cortina.addEventListener("click", ()=>{
 })
 
 document.addEventListener("DOMContentLoaded", function(){
-    const tributos = document.querySelectorAll(".tributos");
-
+    const tributos = document.querySelectorAll(".tributos-content");
     tributos.forEach(item => {
         item.addEventListener("click", function(){
             tributos.forEach(i => i.classList.remove('selected'));
