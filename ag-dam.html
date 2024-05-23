@@ -30,6 +30,47 @@
                     <i class="bi bi-fonts"></i>
                 </button>
             </div>
+            <div class="a11y-modal">
+                <button class="modal-btn" data-bs-toggle="modal" data-bs-target=".modal">
+                    Clique aqui!
+                </button>
+            </div>
+            <div class="modal fade" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Para que servem os botões?</h4>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="pt-2">
+                                <button class="a11y-button">
+                                    <i class="bi bi-circle-half"></i>
+                                </button>
+                                <span class="ms-1">O botão de alto contraste facilita a leitura de texto.</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="a11y-button">
+                                    <i class="bi bi-zoom-out"></i>
+                                </button>
+                                <span class="ms-1">Este diminui o tamanho da fonte.</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="a11y-button">
+                                    <i class="bi bi-zoom-in"></i>
+                                </button>
+                                <span class="ms-1">Este aumenta o tamanho da fonte.</span>
+                            </div>
+                            <div class="pt-2">
+                                <button class="a11y-button">
+                                    <i class="bi bi-fonts"></i>
+                                </button>
+                                <span class="ms-1">Este retorna o tamanho para a fonte padrão.</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
         </div>
     </header>
     <main class="container">
@@ -51,8 +92,12 @@
                  data-bs-custom-class="user-popover"
                  data-bs-content="
                  <ul class='popover-list'>
-                    <li>Solicitar acesso</li>
-                    <li>Redefinir senha</li>
+                    <li>
+                        <a href='ag-senha.html' 
+                         class='popover-list--a'>
+                            Redefinir senha
+                        </a>
+                    </li>
                     <li>
                         <a href='ag-login.html' 
                          class='popover-list--a'>
@@ -241,48 +286,6 @@
         </div>
         <p class="footer-text">Ágape © Copyright 2024</p>
     </footer>
-    <!-- MODAL -->
-    <div class="a11y-modal">
-        <button class="a11y-button" data-bs-toggle="modal" data-bs-target=".modal">
-            <i class="bi bi-universal-access-circle text-white"></i>
-        </button>
-    </div>
-    <div class="modal fade" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h4 class="modal-title">Para que servem esses botões?</h4>
-                    <button class="btn-close" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="pt-2">
-                        <button class="a11y-button">
-                            <i class="bi bi-circle-half"></i>
-                        </button>
-                        <span class="ms-1">O botão de alto contraste facilita a leitura de texto.</span>
-                    </div>
-                    <div class="pt-2">
-                        <button class="a11y-button">
-                            <i class="bi bi-zoom-out"></i>
-                        </button>
-                        <span class="ms-1">Este diminui o tamanho da fonte.</span>
-                    </div>
-                    <div class="pt-2">
-                        <button class="a11y-button">
-                            <i class="bi bi-zoom-in"></i>
-                        </button>
-                        <span class="ms-1">Este aumenta o tamanho da fonte</span>
-                    </div>
-                    <div class="pt-2">
-                        <button class="a11y-button">
-                            <i class="bi bi-fonts"></i>
-                        </button>
-                        <span class="ms-1">Este retorna o tamanho para a fonte padrão</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
     <script src="app.js"></script>
     <script src="/js/acessibilidade.js"></script>
     <script src="js/dam.js"></script>
