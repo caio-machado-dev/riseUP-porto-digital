@@ -94,6 +94,19 @@ p{margin-bottom: 0}
     cursor: pointer;
 }
 
+.modal-btn{
+    background-color: transparent;
+    color: #fff;
+    border-radius: 8px;
+    border: 2px solid var(--clr-yellow);
+    padding: .3em .6em;
+}
+
+.modal-btn:hover{
+    background-color: var(--clr-yellow);
+    transition: .5s;
+}
+
 .a11y-button, .filter-btn, .pay-btn{
     color: #fff;
     border: none;
@@ -151,7 +164,7 @@ input::placeholder, input:focus{color: var(--text-gray)}
 
 .grid__section{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: .5em;
 }
 
@@ -181,19 +194,13 @@ footer{
 
 .footer-text, .msg{font-size: .9rem}
 
-.a11y-modal{
-    position: fixed;
-    right: 0;
-    top: 50%;
-}
-
 @media (min-width: 768px) and (min-height: 600px){
     .gov-logo{width: 120px}
     .gov-logo--container{width: 35%}
     
     #input-busca{padding: .5em 1em}
 
-    .grid__section{grid-template-columns: repeat(3, 1fr)}
+    .grid__section{grid-template-columns: repeat(2, 1fr)}
 
     .search-box, .grid-title{
         width: 50%;
@@ -211,7 +218,7 @@ footer{
 @media (min-width: 1200px) and (min-height: 800px){
     .gov-logo--container{width: 50%}
     .gov-logo{width: 150px}
-    .grid__section{grid-template-columns: repeat(4, 1fr)}
+    .grid__section{grid-template-columns: repeat(2, 1fr)}
 }
 
 @media (min-height: 1200px) {
