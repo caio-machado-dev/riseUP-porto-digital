@@ -119,8 +119,12 @@ input::placeholder{font-size: 1rem}
 
 .btn:hover, .return-btn:hover{opacity: .7}
 
+.ag-logo--container{
+    position: relative;
+}
+
 .btn-group{
-    position: fixed;
+    position: absolute;
     top: 1%;
     right: 1%;
 }
