@@ -11,6 +11,7 @@ html{background-color: #2765D9}
 
 body{
     height: 100dvh;
+    font-size: 1.5rem;
     background: linear-gradient(to bottom, #2765D9 0%, #022C90 100%);
 }
 
@@ -28,25 +29,17 @@ body{
     font-weight: 400;
 }
 
-.content h1{
-    font-size: 3.25rem;
-}
-
-.content p{
-    font-size: 2rem;
-}
-
 .btn{
     position: absolute;
     bottom: 0;
     right: 0;
-
 
     display: flex;
     align-items: center;
     gap: 2em;
 
     background-color: #febb01;
+    font-size: 1.5rem;
     color: #fff;
     width: fit-content;
     padding: .5em .75em;
@@ -54,6 +47,10 @@ body{
     margin: 1em;
 }
 
-.btn:hover{
-    opacity: .5;
+.btn:hover{opacity: .5}
+
+@media (min-width: 768px) {
+    body{
+        font-size: 2.5rem;
+    }
 }
