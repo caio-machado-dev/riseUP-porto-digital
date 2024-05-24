@@ -1,242 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
-
+        
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Rubik", sans-serif;
 }
 
-:root{
-    --border:#D9D9D9;
-    --bg-light: #fff;
-    --text-blue: #022C90;
-    --text-dark: #212529;
-    --text-gray:#636363;
-    --clr-yellow:#FEBB01;
-    --clr-blue-primary:#022C90;
-    --btn-blue: #022C90;
-    --btn-text: #fff;
-}
-
-.dark-mode:root{
-    --border: #ababab;
-    --btn-blue: #febb01;
-    --btn-text: #000;
-    --text-dark: #febb01;
-    --text-blue: #febb01;
-    --text-gray: #febb01;
-    --bg-light: #121212;
-    --clr-blue-primary: #000;
-}
+html{background-color: #2765D9}
 
 body{
-    background-color: var(--bg-light);
-    font-size: 1rem;
+    height: 100dvh;
+    font-size: 1.5rem;
+    background: linear-gradient(to bottom, #2765D9 0%, #022C90 100%);
 }
 
-.row{display: flex}
+.content{
+    padding: 1em;
+}
 
-.section__head{background-color: var(--clr-blue-primary)}
+.ag-logo{
+    width: 60px;
+}
 
-.section__head a{
+.content h1, p{
     color: #fff;
-    text-decoration: none;
-}
-
-.welcome-box{
-    display: flex;
-    flex-direction: column;
-    gap: 1em;
-}
-
-.return-btn{
-    display: flex;
-    align-items: center;
-}
- 
-.return-btn p:before{ 
-    content:"\2039";
-    margin-right: .5em;
-}
-
-.gov-logo--container{
-    width: 50%;
-    margin: 0 auto 1em;
-    display: flex;
-    justify-content: center;
-    background-color: #fff;
-}
-
-.gov-logo{width: 75%}
-
-.forms-title{
-    color: var(--text-dark);
+    margin-top: 2rem;
     font-weight: 400;
-    text-align: center;
-}
-
-label,
-.forms-main p{color: var(--text-dark)}
-
-.forms-main{margin-top: 1em}
-
-.forms-main form{padding: .5em 0}
-
-.forms-main form input{
-    width: 100%;
-    padding: 1.25em;
-    border-radius: 16px;
-    color: var(--text-dark);
-    background-color: var(--bg-light);
-    border: 2px solid var(--border);
-}
-
-.forms-main form input:focus,
-.forms-main form input:active{
-    outline: none;
-    border: 2px solid var(--btn-blue);
-}
-
-.forms-footer{justify-content: space-between}
-
-input::placeholder{font-size: 1rem}
-
-.section-btn{
-    flex-direction: column;
-    padding: 1.5em 0 0;
-    gap: .5em;
 }
 
 .btn{
-    color: var(--btn-text);
-    background-color: var(--btn-blue);
-    text-decoration: none;
-    border-radius: 16px;
-    padding: .75em 0;
-    text-align: center;
-}
-
-.btn:hover, .return-btn:hover{opacity: .7}
-
-.ag-logo--container{
-    position: relative;
-}
-
-.btn-group{
     position: absolute;
-    top: 1%;
-    right: 1%;
-}
+    bottom: 0;
+    right: 0;
 
-.a11y-button{
+    display: flex;
+    align-items: center;
+    gap: 2em;
+
+    background-color: #febb01;
+    font-size: 1.25rem;
     color: #fff;
-    border: none;
-    border-radius: 4px;
+    width: fit-content;
     padding: .5em .75em;
-    background-color: var(--clr-yellow);
-    box-shadow: 0 2px 2px rgba(0, 0, 0, .5);
+    border-radius: 16px;
+    margin: 1em;
 }
 
-.a11y-button:hover{cursor: pointer;}
+.btn:hover{opacity: .5}
 
-.certificado{
-    justify-content: center;
-    gap: .25em;
-}
-
-.voltar{
-    background-color: var(--bg-light);
-    color: var(--text-blue);
-    border: 1px solid var(--text-blue);
-}
-
-.anchor{color: var(--text-blue)}
-
-.section-footer p{
-    background-color: var(--bg-light);
-    color: var(--text-gray);
-    text-align: center;
-}
-
-@media (max-width: 800px) {
-    .container{padding: 1em}
-    .d-none{display: none}
-    .ag-logo{width: 50px}
-    .section__head, .forms-main p{text-align: center}
-
-    .section__head{
-        border-bottom-left-radius: 45%;
-        border-bottom-right-radius: 45%;
-        padding: 2em 0;
+@media (min-width: 768px) {
+    body{
+        font-size: 2.5rem;
     }
-
-    .section__head a{
-        position: fixed;
-        top: 1%;
-        left: 1%;        
-    }
-
-    .return-img{
-        width: 20px;
-    }
-
-    .section-footer p{
-        font-size: .8rem;
-
-        position: fixed;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
-    }
-}
-
-@media (min-width:801px) {
-    .wrapper{min-height: 100dvh}
-    .column{display: flex;}
-    .ag-logo, .footer-logo{width: 40px}
-
-    .position{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        padding: 0 2em;
-        width: 100%;
-    }
-
-    .section__head{
-        flex-basis: 60%;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 1em;
-        background: linear-gradient(to bottom, #2765D9 0%, #022C90 100%);
-    }
-
-    .section__head p{
-        color: #fff;
-        font-size: 1.5rem;
-    }
-
-    .section__main{
-        flex-basis: 40%;
-        position: relative;
-    }
-
-    .section-footer{
-        text-align: center;
-        margin-top: 1em;
-    }
-
-    .return-img{
-        display: none;
-    }
-}
-
-@media (min-width: 1200px) {
-    .section__head{width: 65%}
-    .section__main{width: 35%}
-    .ag-logo, .footer-logo{width: 80px}
 }
