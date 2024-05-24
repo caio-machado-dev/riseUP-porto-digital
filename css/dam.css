@@ -32,6 +32,10 @@
     border: none;
 }
 
+.aside-content i{
+    color: #febb01;
+}
+
 .aside-title, .list-title{color: var(--clr-yellow)}
 
 .aside-list{

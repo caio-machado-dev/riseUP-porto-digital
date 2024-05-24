@@ -116,7 +116,7 @@
                 <i class="bi bi-funnel"></i>
                 <p>Filtros</p>
             </button>
-            <select type="text" id="input-tributos" class="flex-grow-1 p-2" multiple>
+            <select type="text" id="input-tributos" class="flex-grow-1 p-2">
                 <option disabled="disabled" selected="selected">Selecione um tributo</option>
                 <option>IPTU - IPTU GRAND</option>
                 <option>ALUGUEL 2 - ALUGUEL</option>
@@ -302,20 +302,29 @@
             </button>
         </div>
         <div class="aside-content">
-            <h5 class="list-title">Data</h5>
+            <div class="d-flex gap-2">
+                <i class="bi bi-calendar"></i>
+                <h5 class="list-title">Data adicionada</h5>
+            </div>
             <ul class="aside-list">
                 <li><input type="checkbox" class="me-2">Último mês</li>
                 <li><input type="checkbox" class="me-2">Últimos três meses</li>
                 <li><input type="checkbox" class="me-2">Último ano</li>
                 <li><input type="checkbox" class="me-2">Todo período</li>
             </ul>
-            <h5 class="list-title">Situação</h5>
+            <div class="d-flex gap-2">
+                <i class="bi bi-cash-stack"></i>
+                <h5 class="list-title">Situação</h5>
+            </div>
             <ul class="aside-list">
                 <li><input type="checkbox" class="me-2">Pago</li>
                 <li><input type="checkbox" class="me-2">Pendente</li>
                 <li><input type="checkbox" class="me-2">Atrasado</li>
             </ul>
-            <h5 class="list-title">Mostrar/Ocultar dados</h5>
+            <div class="d-flex gap-2">
+                <i class="bi bi-list-check"></i>
+                <h5 class="list-title">Mostrar/Ocultar dados</h5>
+            </div>
             <ul class="aside-list">
                 <li><input type="checkbox" class="me-2" checked>Emissão</li>
                 <li><input type="checkbox" class="me-2" checked>Vencimento</li>
@@ -331,11 +340,17 @@
                 <li><input type="checkbox" class="me-2">Status</li>
                 <li><input type="checkbox" class="me-2" checked>Situação</li>
             </ul>
-            <h5 class="list-title">Subtotal</h5>
+            <div class="d-flex gap-2">
+                <i class="bi bi-cash-stack"></i>
+                <h5 class="list-title">Subtotal</h5>
+            </div>
             <ul class="aside-list">
                 <input type="text" maxlength="9" id="subtotal" onkeyup="formatarSubtotal()" placeholder="Digite o valor desejado">
             </ul>
-            <h5 class="list-title">Período</h5>
+            <div class="d-flex gap-2">
+                <i class="bi bi-calendar"></i>
+                <h5 class="list-title">Período</h5>
+            </div>
             <ul class="aside-list">
                 <span>Inicial</span>
                 <li>
@@ -346,7 +361,10 @@
                     <input type="date" class="w-100 input-date">
                 </li>
             </ul>
-            <h5 class="list-title">Ano</h5>
+            <div class="d-flex gap-2">
+                <i class="bi bi-calendar"></i>
+                <h5 class="list-title">Ano</h5>
+            </div>
             <select class="filter-select w-100" multiple>
                 <option selected>Selecione o ano</option>
                 <option value="2024">2024</option>
