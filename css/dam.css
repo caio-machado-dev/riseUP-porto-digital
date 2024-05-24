@@ -82,13 +82,9 @@
 }
 
 .tributos-content{flex-basis: 60%}
-
-footer{
-    position: fixed;
-    bottom: 0;
-}
-
 .tributos-footer{color: var(--text-dark)}
+
+#pagar .modal-header{color:var(--clr-blue-primary)}
 
 @media (max-width:576px) {
     .pay-btn{
@@ -110,13 +106,17 @@ footer{
         height: 320px;
     }
 
-    .tributos{flex-direction: column}
+    .tributos, .modal-tributos{flex-direction: column}
 
     .tributos-title, .tributos-content{
         display: grid;
         grid-template-columns: 1fr repeat(7, 1fr);   
         text-align: center;    
         border-right: none; 
+    }
+
+    .remove{
+        display: none;
     }
 
     .selected{

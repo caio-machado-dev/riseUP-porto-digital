@@ -195,19 +195,19 @@ input::placeholder, input:focus{color: var(--text-gray)}
     
     #input-busca{padding: .5em 1em}
 
-    .grid__section{grid-template-columns: repeat(2, 1fr)}
+    .grid__section{grid-template-columns: repeat(3, 1fr)}
 
     .search-box, .grid-title{
         width: 50%;
         margin: 0;
     }
 
-    footer{
+    /* footer{
         position: absolute;
         bottom: 0;
         left: 50%;
         transform: translateX(-50%);
-    }
+    } */
 
 }
 
