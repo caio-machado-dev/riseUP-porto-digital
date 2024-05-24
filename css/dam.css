@@ -53,6 +53,8 @@
     border: none;
 }
 
+.input-date{width: 100%}
+
 #subtotal:focus, #subtotal:hover, .input-date, .filter-select:focus{outline: none}
 
 .tributos__section{
@@ -94,6 +96,7 @@
 .tributos-footer{color: var(--text-dark)}
 
 #pagar .modal-header{color:var(--clr-blue-primary)}
+
 
 footer{
     position: absolute;
