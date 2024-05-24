@@ -66,6 +66,11 @@
     text-align: start;
 }
 
+.selected{
+    background-color: var(--clr-blue-secondary);
+    color: #fff;
+}  
+
 .tributos{display: flex}
 
 .tributos-title, .tributos-content{
@@ -129,11 +134,6 @@ footer{
     .remove{
         display: none;
     }
-
-    .selected{
-        background-color: var(--clr-blue-secondary);
-        color: #fff;
-    }  
 
     ::-webkit-scrollbar{
         width: 3px;
