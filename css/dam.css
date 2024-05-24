@@ -4,8 +4,9 @@
     transform: translateX(-100%);
 
     background-color: var(--clr-blue-primary);
-    z-index: 1;
     height: 100%;
+    z-index: 1;
+    overflow-y: auto;
     transition: 1s;
 }
 
@@ -41,6 +42,14 @@
 
 .aside-list li{margin-top: .5em}
 .aside-list select, .aside-list input{margin-bottom: .5em}
+
+#subtotal, .input-date, .filter-select{
+    border-radius: 16px;
+    padding: .25em .75em;
+    border: none;
+}
+
+#subtotal:focus, #subtotal:hover, .input-date, .filter-select:focus{outline: none}
 
 .tributos__section{
     overflow-y: scroll;
@@ -114,6 +123,25 @@ footer{
         background-color: var(--clr-blue-secondary);
         color: #fff;
     }  
+
+    ::-webkit-scrollbar{
+        width: 3px;
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-track{
+        background: none; 
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #d9d9d9; 
+        border-radius: 10px;
+    }
+    
+    ::-webkit-scrollbar-thumb:hover{
+        background: #555; 
+    }
 }
 
 @media (min-width: 1200px) and (min-height: 935px){

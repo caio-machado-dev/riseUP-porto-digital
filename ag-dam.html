@@ -31,11 +31,11 @@
                 </button>
             </div>
             <div class="a11y-modal">
-                <button class="modal-btn" data-bs-toggle="modal" data-bs-target=".modal">
+                <button class="modal-btn" data-bs-toggle="modal" data-bs-target="#clique-aqui">
                     Clique aqui!
                 </button>
             </div>
-            <div class="modal fade" tabindex="-1">
+            <div id="clique-aqui" class="modal fade" tabindex="-1">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
@@ -240,10 +240,23 @@
             <p>Página <span class="border rounded px-1">1</span> de <span class="tributos-pag">5</span></p>
         </div>
         <div class="d-flex justify-content-end pt-2">
-            <button class="pay-btn column align-items-center gap-2">
+            <button class="pay-btn column align-items-center gap-2" data-bs-toggle="modal" data-bs-target="#pagar">
                 <i class="bi bi-cash"></i>
                 <p>PAGAR</p>
             </button>
+            
+            <div id="pagar" class="modal fade" tabindex="-1">
+                <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h4 class="modal-title">Cobranças da Arrecadação</h4>
+                            <button class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <div class="modal-body">
+                            a
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
     <!-- Filtro -->
@@ -257,18 +270,50 @@
         <div class="aside-content">
             <h5 class="list-title">Data</h5>
             <ul class="aside-list">
-                <li><input type="checkbox" class="me-2">3 dias</li>
-                <li><input type="checkbox" class="me-2">7 dias</li>
-                <li><input type="checkbox" class="me-2">15 dias</li>
+                <li><input type="checkbox" class="me-2">Último mês</li>
+                <li><input type="checkbox" class="me-2">Últimos três meses</li>
+                <li><input type="checkbox" class="me-2">Último ano</li>
+                <li><input type="checkbox" class="me-2">Todo período</li>
+            </ul>
+            <h5 class="list-title">Situação</h5>
+            <ul class="aside-list">
+                <li><input type="checkbox" class="me-2">Pago</li>
+                <li><input type="checkbox" class="me-2">Pendente</li>
+                <li><input type="checkbox" class="me-2">Atrasado</li>
+            </ul>
+            <h5 class="list-title">Mostrar/Ocultar dados</h5>
+            <ul class="aside-list">
+                <li><input type="checkbox" class="me-2" checked>Emissão</li>
+                <li><input type="checkbox" class="me-2" checked>Vencimento</li>
+                <li><input type="checkbox" class="me-2" checked>Subtotal</li>
+                <li><input type="checkbox" class="me-2" checked>Desconto</li>
+                <li><input type="checkbox" class="me-2" checked>Juros</li>
+                <li><input type="checkbox" class="me-2" checked>Multa</li>
+                <li><input type="checkbox" class="me-2">Exer.</li>
+                <li><input type="checkbox" class="me-2">Correção Monetária</li>
+                <li><input type="checkbox" class="me-2">Taxa Exp.</li>
+                <li><input type="checkbox" class="me-2">Taxa Adicional</li>
+                <li><input type="checkbox" class="me-2">Valor Corrigido</li>
+                <li><input type="checkbox" class="me-2">Status</li>
+                <li><input type="checkbox" class="me-2" checked>Situação</li>
+            </ul>
+            <h5 class="list-title">Subtotal</h5>
+            <ul class="aside-list">
+                <input type="text" maxlength="9" id="subtotal" onkeyup="formatarSubtotal()" placeholder="Digite o valor desejado">
             </ul>
             <h5 class="list-title">Período</h5>
             <ul class="aside-list">
-                <strong class="periodo">Inicial</strong>
-                <li><input type="date" class="me-2"></li>
-                <strong class="periodo">Final</strong>
-                <li><input type="date" class="me-2"></li>
+                <span>Inicial</span>
+                <li>
+                    <input type="date" class="w-100 input-date">
+                </li>
+                <span>Final</span>
+                <li>
+                    <input type="date" class="w-100 input-date">
+                </li>
+            </ul>
             <h5 class="list-title">Ano</h5>
-            <select class="form-select form-select-sm" aria-label="Small select example">
+            <select class="filter-select w-100">
                 <option selected>Selecione o ano</option>
                 <option value="2024">2024</option>
                 <option value="2023">2023</option>
@@ -276,27 +321,6 @@
                 <option value="2021">2021</option>
                 <option value="2020">2020</option>
             </select>
-            <h5 class="list-title">Situação</h5>
-            <ul class="aside-list">
-                <li><input type="checkbox" class="me-2">Pago</li>
-                <li><input type="checkbox" class="me-2">Pendente</li>
-                <li><input type="checkbox" class="me-2">Atrasado</li>
-            </ul>
-            <h5 class="list-title">Subtotal</h5>
-            <ul class="aside-list">
-                <label for="subtotal">R$</label>
-                <input type="text" maxlength="9" id="subtotal" onkeyup="formatarSubtotal()" class="me-2">
-            </ul>
-            <h5 class="list-title">Mostrar/Ocultar dados</h5>
-            <ul class="aside-list">
-                <li><input type="checkbox" class="me-2">Emissão</li>
-                <li><input type="checkbox" class="me-2">Vencimento</li>
-                <li><input type="checkbox" class="me-2">Subtotal</li>
-                <li><input type="checkbox" class="me-2">Desconto</li>
-                <li><input type="checkbox" class="me-2">Juros</li>
-                <li><input type="checkbox" class="me-2">Multa</li>
-                <li><input type="checkbox" class="me-2">Situação</li>
-            </ul>
         </div>
     </aside>
     <footer class="container column align-items-center">
