@@ -40,10 +40,7 @@
 }
 
 .aside-list li{margin-top: .5em}
-.aside-list select{margin-bottom: .5em}
-.aside-list input{margin-bottom: .5em}
-
-.aside-list per
+.aside-list select, .aside-list input{margin-bottom: .5em}
 
 .tributos__section{
     overflow-y: scroll;
