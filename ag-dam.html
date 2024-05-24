@@ -118,9 +118,10 @@
             </button>
             <select type="text" id="input-tributos" class="flex-grow-1 p-2">
                 <option disabled="disabled" selected="selected">Selecione um tributo</option>
-                <option>IPTU - IPTU GRAND</option>
-                <option>ALUGUEL 2 - ALUGUEL</option>
-                <option>LIX - COLETA DE LIXO</option>
+                <option>ALVARÁ</option>
+                <option>IPTU</option>
+                <option>ISSNFA</option>
+                <option>MOSTRAR TODOS</option>
             </select>
         </div>
         <!-- GRID DOS TRIBUTOS -->
@@ -369,7 +370,7 @@
                         </div>
                         <div class="modal-body">
                             <div class="modal-tributos d-flex">
-                                <div>
+                                <div class="modal-tributos-title">
                                     <span>EMISSÃO</span>
                                     <span>VENCIMENTO</span>
                                     <span>SUBTOTAL</span>
@@ -378,32 +379,72 @@
                                     <span>IMPRIMIR</span>
                                     <span>CANCELAR</span>
                                 </div>
-                                <div>
+                                <div class="modal-tributos-content">
                                     <span>25/09/2023</span>
                                     <span>25/09/2023</span>
-                                    <span>200,00</span>
-                                    <span>235,00</span>
+                                    <span>1200,00</span>
+                                    <span>1235,00</span>
                                     <span>Pendente</span>
-                                    <span></span>
+                                    <span><i class="bi bi-printer"></i></span>
+                                    <span><i class="bi bi-x-circle"></i></span>
                                 </div>
-                                <div>
-                                    <span>25/09/2023</span>
-                                    <span>25/09/2023</span>
-                                    <span>200,00</span>
-                                    <span>250,00</span>
-                                    <span>Pendente</span>
-                                    <span></span>
+                                <div class="modal-tributos-title remove">
+                                    <span>EMISSÃO</span>
+                                    <span>VENCIMENTO</span>
+                                    <span>SUBTOTAL</span>
+                                    <span>VALOR CORRIGIDO</span>
+                                    <span>SITUAÇÃO</span>
+                                    <span>IMPRIMIR</span>
+                                    <span>CANCELAR</span>
                                 </div>
-                                <div>
+                                <div class="modal-tributos-content">
                                     <span>25/09/2023</span>
                                     <span>25/09/2023</span>
-                                    <span>200,00</span>
-                                    <span>221,00</span>
+                                    <span>1200,00</span>
+                                    <span>1235,00</span>
                                     <span>Pendente</span>
-                                    <span></span>
+                                    <span><i class="bi bi-printer"></i></span>
+                                    <span><i class="bi bi-x-circle"></i></span>
+                                </div>
+                                <div class="modal-tributos-title remove">
+                                    <span>EMISSÃO</span>
+                                    <span>VENCIMENTO</span>
+                                    <span>SUBTOTAL</span>
+                                    <span>VALOR CORRIGIDO</span>
+                                    <span>SITUAÇÃO</span>
+                                    <span>IMPRIMIR</span>
+                                    <span>CANCELAR</span>
+                                </div>
+                                <div class="modal-tributos-content">
+                                    <span>25/09/2023</span>
+                                    <span>25/09/2023</span>
+                                    <span>1200,00</span>
+                                    <span>1235,00</span>
+                                    <span>Pendente</span>
+                                    <span><i class="bi bi-printer"></i></span>
+                                    <span><i class="bi bi-x-circle"></i></span>
+                                </div>
+                                <div class="modal-tributos-title remove">
+                                    <span>EMISSÃO</span>
+                                    <span>VENCIMENTO</span>
+                                    <span>SUBTOTAL</span>
+                                    <span>VALOR CORRIGIDO</span>
+                                    <span>SITUAÇÃO</span>
+                                    <span>IMPRIMIR</span>
+                                    <span>CANCELAR</span>
+                                </div>
+                                <div class="modal-tributos-content">
+                                    <span>25/09/2023</span>
+                                    <span>25/09/2023</span>
+                                    <span>1200,00</span>
+                                    <span>1535,00</span>
+                                    <span>Pendente</span>
+                                    <span><i class="bi bi-printer"></i></span>
+                                    <span><i class="bi bi-x-circle"></i></span>
                                 </div>
                             </div>
                         </div>
+                        <button class="new-charge-btn">NOVA COBRANÇA</button>
                     </div>
                 </div>
             </div>
@@ -426,16 +467,15 @@
                 <li><input type="checkbox" class="me-2">Último mês</li>
                 <li><input type="checkbox" class="me-2">Últimos três meses</li>
                 <li><input type="checkbox" class="me-2">Último ano</li>
-                <li><input type="checkbox" class="me-2">Todo período</li>
+                <li><input type="checkbox" class="me-2">Todo o período</li>
             </ul>
             <div class="d-flex gap-2">
                 <i class="bi bi-cash-stack"></i>
-                <h5 class="list-title">Situação</h5>
+                <h5 class="list-title">Status</h5>
             </div>
             <ul class="aside-list">
-                <li><input type="checkbox" class="me-2">Pago</li>
+                <li><input type="checkbox" class="me-2">Ativada</li>
                 <li><input type="checkbox" class="me-2">Pendente</li>
-                <li><input type="checkbox" class="me-2">Atrasado</li>
             </ul>
             <div class="d-flex gap-2">
                 <i class="bi bi-list-check"></i>
@@ -481,14 +521,14 @@
                 <i class="bi bi-calendar"></i>
                 <h5 class="list-title">Ano</h5>
             </div>
-            <select class="filter-select w-100" multiple>
-                <option selected>Selecione o ano</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
-            </select>
+            <ul class="aside-list">
+                <li><input type="checkbox" class="me-2">2024</li>
+                <li><input type="checkbox" class="me-2">2023</li>
+                <li><input type="checkbox" class="me-2">2022</li>
+                <li><input type="checkbox" class="me-2">2021</li>
+                <li><input type="checkbox" class="me-2">2020</li>
+                <li><input type="checkbox" class="me-2" checked>Todo o período</li>
+            </ul>
         </div>
     </aside>
     <footer class="container-main column align-items-center">
