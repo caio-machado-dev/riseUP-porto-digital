@@ -47,7 +47,7 @@
 .aside-list li{margin-top: .5em}
 .aside-list select, .aside-list input{margin-bottom: .5em}
 
-#subtotal, .input-date{
+#subtotal{
     border-radius: 16px;
     padding: .25em .75em;
     border: none;
@@ -55,11 +55,11 @@
 
 .input-date, #subtotal{width: 100%}
 
-.filter-select{
+.filter-select, .input-date{
     padding: .25em .75em;
 }
 
-#subtotal:focus, #subtotal:hover, .input-date, .filter-select:focus{outline: none}
+#subtotal:focus, #subtotal:hover, .filter-select:focus{outline: none}
 
 .tributos__section{
     overflow-y: scroll;
