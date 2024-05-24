@@ -153,7 +153,7 @@ footer{
         height: 320px;
     }
 
-    .tributos, .modal-tributos{flex-direction: column}
+    .tributos{flex-direction: column}
 
     .tributos-title, .tributos-content{
         display: grid;
