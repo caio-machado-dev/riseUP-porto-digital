@@ -27,8 +27,13 @@ document.addEventListener("DOMContentLoaded", function(){
     const tributos = document.querySelectorAll(".tributos-content");
     tributos.forEach(item => {
         item.addEventListener("click", function(){
-            tributos.forEach(i => i.classList.remove('selected'));
-            this.classList.add('selected');
+            if (this.classList.contains("selected")){
+                this.classList.remove("selected");
+            }
+            else {
+                this.classList.add("selected");
+            }
+            
         })
     })
 });
