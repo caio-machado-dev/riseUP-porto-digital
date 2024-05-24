@@ -122,7 +122,7 @@ footer{
     footer div{display: none}
 }
 
-@media (min-width: 992px) and (min-height: 600px) {
+@media (min-width: 800px) and (min-height: 600px) {
     .tributos__section{
         overflow-y: auto;
         overflow-x: hidden;
@@ -162,6 +162,10 @@ footer{
     }
 }
 
-@media (min-width: 1200px) and (min-height: 935px){
-    .tributos__section{height: 650px} 
+@media (min-height: 935px) {
+    .tributos__section{height: 650px;}
+}
+
+@media (min-width: 1200px) and (min-height: 1000px){
+    .tributos__section{height: 700px} 
 }
