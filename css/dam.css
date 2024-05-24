@@ -81,12 +81,14 @@
     color: #fff;
 }  
 
-.tributos{display: flex}
+.tributos, .modal-tributos{display: flex}
 
 .tributos-title, .tributos-content{
     display: flex;
     flex-direction: column;
 }
+
+
 
 .tributos-title{
     flex-basis: 40%;
@@ -145,10 +147,10 @@ footer{
     footer div{display: none}
 }
 
-@media (min-width: 800px) and (min-height: 600px) {
+@media (min-width: 700px) and (min-height: 600px) {
     .tributos__section{
         overflow-y: auto;
-        overflow-x: hidden;
+        overflow: auto;
         height: 320px;
     }
 
@@ -193,13 +195,13 @@ footer{
     }
 }
 
-@media (min-width: 800px) and (min-height: 700px) {
+@media (min-width: 750px) and (min-height: 700px) {
     .tributos__section{
         height: 350px;
     }
 }
 
-@media (min-width: 800px) and (min-height: 900px) {
+@media (min-width: 750px) and (min-height: 900px) {
     .tributos__section{height: 650px}
 }
 
