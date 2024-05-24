@@ -81,14 +81,13 @@
     color: #fff;
 }  
 
-.tributos, .modal-tributos{display: flex}
+/* GRID DOS TRIBUTOS */
+.tributos{display: flex} 
 
 .tributos-title, .tributos-content{
     display: flex;
     flex-direction: column;
 }
-
-
 
 .tributos-title{
     flex-basis: 40%;
