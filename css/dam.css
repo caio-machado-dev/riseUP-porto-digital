@@ -47,13 +47,17 @@
 .aside-list li{margin-top: .5em}
 .aside-list select, .aside-list input{margin-bottom: .5em}
 
-#subtotal, .input-date, .filter-select{
+#subtotal, .input-date{
     border-radius: 16px;
     padding: .25em .75em;
     border: none;
 }
 
-.input-date{width: 100%}
+.input-date, #subtotal{width: 100%}
+
+.filter-select{
+    padding: .25em .75em;
+}
 
 #subtotal:focus, #subtotal:hover, .input-date, .filter-select:focus{outline: none}
 
