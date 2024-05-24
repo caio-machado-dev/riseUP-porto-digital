@@ -201,14 +201,6 @@ input::placeholder, input:focus{color: var(--text-gray)}
         width: 50%;
         margin: 0;
     }
-
-    /* footer{
-        position: absolute;
-        bottom: 0;
-        left: 50%;
-        transform: translateX(-50%);
-    } */
-
 }
 
 @media (min-width: 1200px) and (min-height: 800px){

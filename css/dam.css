@@ -86,6 +86,13 @@
 
 #pagar .modal-header{color:var(--clr-blue-primary)}
 
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
 @media (max-width:576px) {
     .pay-btn{
         width: 100%;
