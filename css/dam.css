@@ -25,6 +25,10 @@
     transform: translateX(0);
 }
 
+.container-main{
+    padding: 0 1em;
+}
+
 .bi-x-lg{color:#fff}
 
 .close-btn{
@@ -103,6 +107,7 @@
 
 
 footer{
+    width: 100%;
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -133,7 +138,7 @@ footer{
 
     .tributos-title, .tributos-content{
         display: grid;
-        grid-template-columns: 1fr repeat(7, 1fr);   
+        grid-template-columns: repeat(13, 1fr);   
         text-align: center;    
         border-right: none; 
     }
@@ -162,13 +167,13 @@ footer{
     }
 }
 
-@media (min-height: 700px) {
+@media (min-width: 800px) and (min-height: 700px) {
     .tributos__section{
         height: 350px;
     }
 }
 
-@media (min-height: 900px) {
+@media (min-width: 800px) and (min-height: 900px) {
     .tributos__section{height: 650px}
 }
 
