@@ -36,11 +36,7 @@
     border: none;
 }
 
-.aside-content i{
-    color: #febb01;
-}
-
-.aside-title, .list-title{color: var(--clr-yellow)}
+.aside-title, .list-title, .aside-content i{color: var(--clr-yellow)}
 
 .aside-list{
     color: #fff;
@@ -82,14 +78,14 @@
 }  
 
 /* GRID DOS TRIBUTOS */
-.tributos{display: flex} 
+.tributos, .modal-tributos{display: flex} 
 
-.tributos-title, .tributos-content{
+.tributos-title, .tributos-content, .modal-tributos-title, .modal-tributos-content{
     display: flex;
     flex-direction: column;
 }
 
-.tributos-title{
+.tributos-title, .modal-tributos-title{
     flex-basis: 40%;
     font-weight: 500;
 }
@@ -105,9 +101,8 @@
 }
 
 .bi-x-circle{color: red}
-.tributos-content{flex-basis: 60%}
+.tributos-content, .modal-tributos-content{flex-basis: 60%}
 .tributos-footer{color: var(--text-dark)}
-
 #pagar .modal-header{color:var(--clr-blue-primary)}
 
 .new-charge-btn{
@@ -121,9 +116,7 @@
     align-self: end;
 }
 
-.new-charge-btn:hover{
-    opacity: .75;
-}
+.new-charge-btn:hover{opacity: .75}
 
 footer{
     width: 100%;
@@ -149,15 +142,15 @@ footer{
 @media (min-width: 700px) and (min-height: 600px) {
     .tributos__section{
         overflow-y: auto;
-        overflow: auto;
+        overflow-x: auto;
         height: 320px;
     }
 
-    .tributos{flex-direction: column}
+    .tributos, .modal-tributos{flex-direction: column}
 
     .tributos-title, .tributos-content{
         display: grid;
-        grid-template-columns: repeat(13, 1fr);   
+        grid-template-columns: 1.5fr repeat(12, 1fr);   
     }
 
     .tributos-title, .tributos-content, .modal-tributos-title, .modal-tributos-content{
@@ -170,12 +163,11 @@ footer{
         grid-template-columns: repeat(7, 1fr);
     }
 
-    .remove{
-        display: none;
-    }
+    .remove{display: none}
 
     ::-webkit-scrollbar{
-        width: 3px;
+        width: 5px;
+        height: 5px;
         border-radius: 10px;
     }
     
