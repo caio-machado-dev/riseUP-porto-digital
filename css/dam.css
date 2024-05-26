@@ -86,7 +86,7 @@
 }
 
 .tributos-title, .modal-tributos-title{
-    flex-basis: 40%;
+    flex-basis: 50%;
     font-weight: 500;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .bi-x-circle{color: red}
-.tributos-content, .modal-tributos-content{flex-basis: 60%}
+.tributos-content, .modal-tributos-content{flex-basis: 50%}
 .tributos-footer{color: var(--text-dark)}
 #pagar .modal-header{color:var(--clr-blue-primary)}
 
