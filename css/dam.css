@@ -150,7 +150,7 @@ footer{
 
     .tributos-title, .tributos-content{
         display: grid;
-        grid-template-columns: 1.5fr repeat(12, 1fr);   
+        grid-template-columns: 1.5fr repeat(9, 1fr);   
     }
 
     .tributos-title, .tributos-content, .modal-tributos-title, .modal-tributos-content{
